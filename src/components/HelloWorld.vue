@@ -1,3 +1,12 @@
+<style scope="">
+body{
+  background:blue;
+}
+.hello{
+  background:gray;
+}
+</style>
+
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>

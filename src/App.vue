@@ -1,28 +1,17 @@
+
+<style scoped>
+  a{
+    margin-right: 10px;
+  }
+</style>
+
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app"> 
+    <router-view></router-view>
+    <router-link to="/">home</router-link>
+    <router-link to="/hello">hello</router-link>
+    <router-link to="/user/22">传个参2</router-link>
+    <router-link to="/user/33">传个参3</router-link>
+    <router-link to="/vuex">vuex</router-link>
   </div>
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
